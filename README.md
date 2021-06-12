@@ -16,6 +16,9 @@ I have build the restfull Api for the user model
 
 1. You can go to authorization
 2. Under type select Basic Auth
+
+![](https://drive.google.com/file/d/12O-cmkDTlclgFezcIJf0ZTOlheljw7gH/view?usp=sharing)
+
 3. Then Input the Username and Password, user
     username - email@email.com
     password = password
