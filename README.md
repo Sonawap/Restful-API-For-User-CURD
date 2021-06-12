@@ -43,6 +43,7 @@ I have build the restfull Api for the user model
 ```php
     //send a GET request to
    'domain.com/api/user'
+   'https://patricia.sonawap.com.ng/api/user/'
 
    //response
     {
@@ -66,6 +67,7 @@ I have build the restfull Api for the user model
 ```php
     //send a GET request to
    'domain.com/api/user/:id'
+   'https://patricia.sonawap.com.ng/api/user/1'
 
    //response
     {
@@ -84,10 +86,36 @@ I have build the restfull Api for the user model
     }
 ```
 
+## DELETE A USER
+
+```php
+    //send a DELETE request to
+   'domain.com/api/user/:id'
+   'https://patricia.sonawap.com.ng/api/user/1'
+
+   //response
+    {
+        "status": "success",
+        "message": "User has been deleted",
+        "user": {
+            "id": "integer",
+            "name": "string",
+            "email": "string",
+            "email_verified_at": null,
+            "phone": "string",
+            "photo": "string",
+            "created_at": "string",
+            "updated_at": "string",
+            "deleted_at": null,
+        }
+    }
+```
+
 ## GET ALL USERS
 ```php
     //send a delete request to
    'domain.com/api/user/allUsers'
+   'https://patricia.sonawap.com.ng/api/user/allUsers'
 
    //response
     {
@@ -103,10 +131,11 @@ I have build the restfull Api for the user model
 ```php
     //send a POST request to
    'domain.com/api/user/register?email=email@gmail.com&name=Paul Sola Moses&phone=7473839283&password=password'
+   'https://patricia.sonawap.com.ng/api/user/register?email=email@email.com&password=password&name=Patrica&phone=2345445566666'
 
    //response
     {
-        "status": "Account has been updated",
+        "status": "Account has been Created",
         "user": {
             "id": "integer",
             "name": "string",
@@ -127,6 +156,7 @@ I have build the restfull Api for the user model
 ```php
     //send a POST request to
    'domain.com/api/user/login?email=email@gmail.com&password=password'
+   'https://patricia.sonawap.com.ng/api/user/login?email=email@email.com&password=password'
 
    //response if login success
     {
@@ -160,6 +190,7 @@ I have build the restfull Api for the user model
 ```php
     //send a PUT request to
    'domain.com/api/user/:id?email=email@gmail.com&password=password'
+   'https://patricia.sonawap.com.ng/api/user/4/?email=email@email.com&password=password'
 
    //response
     {
