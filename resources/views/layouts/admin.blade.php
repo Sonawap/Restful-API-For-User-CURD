@@ -94,7 +94,7 @@
                                 </p>
                             </a>
                             <ul class="nav nav-treeview">
-                                @can('create role')
+                                @can('create user')
                                     <li class="nav-item">
                                         <a href="{{ route('role.index') }}" class="nav-link">
                                             <i class="fas fa-bomb nav-icon"></i>

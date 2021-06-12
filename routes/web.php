@@ -23,7 +23,6 @@ Route::group(['middleware' => 'auth'], function() {
 
     Route::resource('user', 'UserController');
 
-    Route::resource('permission', 'PermissionController');
 
 
     Route::get('/profile', 'UserController@profile')->name('user.profile');
@@ -36,10 +35,11 @@ Route::group(['middleware' => 'auth'], function() {
 });
 
 
-Route::group(['middleware' => ['auth', 'role_or_permission:admin|create role|create permission']], function() {
+Route::group(['middleware' => ['auth', 'role_or_permission:admin|create user']], function() {
 
     Route::resource('role', 'RoleController');
 
+    Route::resource('permission', 'PermissionController');
 
 });
 
