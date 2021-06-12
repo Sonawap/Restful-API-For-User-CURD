@@ -27,7 +27,7 @@ I have build the restfull Api for the user model
 # API Created, Types of Request you can make
 
 
-1. GET - /user/getAllUsers - This will get a list of all users on this app
+1. GET - /user/allUsers - This will get a list of all users on this app
 2. GET - /user/:id - This will get a user with the specific ID or return null
 3. GET - /user - This will get the autheticiated user
 4. DELETE -/user/:id - This will delete a user with the specific ID
