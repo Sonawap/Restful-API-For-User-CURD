@@ -38,7 +38,6 @@ class UserController extends Controller
 
         $validator = Validator::make($request->all(), [
             'name' => 'required|string',
-            'phone' => 'required',
             'password' => 'required|alpha_num|min:6',
             'email' => 'required|email|unique:users'
         ]);
@@ -66,7 +65,7 @@ class UserController extends Controller
 
         return response()->json([
             'status' => 'Account has been created',
-            'user' => $user
+            'user' => User::latest()->first()
         ],200);
     }
 
