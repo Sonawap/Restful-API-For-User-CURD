@@ -17,7 +17,7 @@ I have build the restfull Api for the user model
 1. You can go to authorization
 2. Under type select Basic Auth
 3. Then Input the Username and Password, user
-    username - paulsola79@gmail.com
+    username - email@email.com
     password = password
 
 
